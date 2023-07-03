@@ -1,0 +1,58 @@
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amscd}
+\usepackage{titlesec}
+\usepackage{chngcntr}
+\usepackage{graphicx}
+\usepackage{bookmark}
+\usepackage{import}
+\usepackage{tikz}
+
+\usepackage[a4paper]{geometry}
+\geometry{
+	top = 20mm,
+	bottom = 20mm,
+	left = 20mm,
+	right = 20mm
+}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	bookmarks=true,
+	unicode=true,
+}
+
+% Enumerates (1), (2), ...
+\usepackage{enumitem}
+\setlist[enumerate,1]{label={(\arabic*)}}
+
+% Table of contents shows up to sections
+\setcounter{tocdepth}{2}
+
+% Footnote counter resets every chapter
+\counterwithin*{footnote}{chapter}
+
+% Format table of contents
+\renewcommand{\contentsname}{목차}
+\renewcommand{\chaptertitlename}{장}
+
+\usepackage{tocloft}
+\renewcommand{\cftchappresnum}{제 }
+\renewcommand{\cftchapaftersnum}{ 장}
+\renewcommand{\cftchapnumwidth}{4em}
+
+\titleformat{\chapter}[display]{\bfseries\Large}
+{\vspace*{-40px} \Large \filleft{제} \thechapter \ 장}
+{4ex}{\titlerule\vspace{2ex}\filright}[\vspace{2ex}\titlerule]
+
+\usepackage{setspace}
+\linespread{1.4}
+
+% Skips between paragraph
+\usepackage[skip=10pt]{parskip}
+\setlength{\parindent}{0pt}
