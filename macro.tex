@@ -28,19 +28,20 @@
 \newcommand{\F}{\mathbb{F}}
 \newcommand{\GL}{\rmbf{GL}}
 \renewcommand{\N}{\mathbb{N}}
-\DeclareMathOperator{\im}{im}
-\DeclareMathOperator{\rk}{rk}
-\DeclareMathOperator{\tr}{tr}
-\DeclareMathOperator{\aut}{Aut}
-\DeclareMathOperator{\diag}{diag}
-\DeclareMathOperator{\ch}{char}
-\DeclareMathOperator{\ann}{ann}
-\DeclareMathOperator{\Ann}{Ann}
-\newcommand{\nsub}{\mathrel{\unlhd}}
-\newcommand{\pnsub}{\mathrel{\lhd}}
 \newcommand{\mimp}{$\implies$}
 \newcommand{\mimpb}{$\impliedby$}
 \newcommand{\miff}{$\iff$}
-\newcommand{\gop}{\text{곱}}
-\newcommand{\sang}{\text{상}}
-\newcommand{\tor}{_{\text{tor}}}
+
+\newcommand{\ex}[1]{%
+    \ifthenelse{\equal{#1}{.}}
+    {\textbf{\sffamily 예제.}}%
+    {\textbf{\sffamily 예제 #1.}}%
+}
+
+\newcommand{\thm}[1]{%
+    \ifthenelse{\equal{#1}{.}}
+    {\textbf{\sffamily 정리.}}%
+    {\textbf{\sffamily 정리 #1.}}%
+}
+
+\newcommand{\pf}{\textbf{증명.}\;}
