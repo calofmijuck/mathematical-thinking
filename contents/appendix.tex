@@ -1,0 +1,116 @@
+\addcontentsline{toc}{chapter}{부록. 논리적 추론 규칙표}
+\chapter*{부록. 논리적 추론 규칙표}
+
+\vspace*{-20px}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p \ra q \\ (2) & p \\\hline & q
+        \end{array}
+    \)
+    (명제 사용하기)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p \ra q \\ (2) & \sim q \\\hline & \sim p
+        \end{array}
+    \)
+    (대우 사용하기)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p \ra q \\ (2) & q \ra r \\ (3) & p \\\hline & r
+        \end{array}
+    \)
+    (삼단논법)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p  \\ (2) & q \\\hline & p \wedge q
+        \end{array}
+    \)
+    (그리고)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p \wedge q \\\hline & p
+        \end{array}
+    \)
+    (그리고-왼)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p \wedge q \\\hline & q
+        \end{array}
+    \)
+    (그리고-오)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p \\\hline & p \vee q
+        \end{array}
+    \)
+    (또는-왼)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & q \\\hline & p \vee q
+        \end{array}
+    \)
+    (또는-오)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p_1 \vee p_2 \\ (2) & p_1 \ra q \\ (3) & p_2 \ra q \\\hline & q
+        \end{array}
+    \)
+    (경우 나누기)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p_1 \vee p_2 \\ (2) & p_1 \ra q_1 \\ (3) & p_2 \ra q_2 \\\hline & q_1 \vee q_2
+        \end{array}
+    \)
+    (경우 나누기 2)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p \vee q \\ (2) & \sim p \\\hline & q
+        \end{array}
+    \)
+    (경우 제거하기-왼)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p \vee q \\ (2) & \sim q \\\hline & p
+        \end{array}
+    \)
+    (경우 제거하기-오)
+\end{center}
+
+\begin{center}
+    \(
+        \begin{array}{c|l}
+            (1) & p \leftrightarrow q \\ (2) & p \\\hline & q
+        \end{array}
+    \)
+    (필요충분조건-왼)
+    \qquad \qquad
+    \(
+        \begin{array}{c|l}
+            (1) & p \leftrightarrow q \\ (2) & q \\\hline & p
+        \end{array}
+    \)
+    (필요충분조건-오)
+\end{center}
